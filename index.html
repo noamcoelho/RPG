@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Cifra de César</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <div id="intro" class="screen" style="display: block;">
+            <h1>Ruínas de Altharion</h1>
+            <p>Seu nome é Kael, um aventureiro da Guilda de Exploradores de Altharion, também conhecida como GEA. Em uma
+                manhã comum, você recebeu um convite de Novan, o mestre da GEA, para uma reunião de extrema urgência.
+                Após arrumar suas coisas, você seguiu em direção ao centro comercial de Altharion, onde se encontra o
+                prédio da GEA e o escritório de Nova. Nesse momento, você se encontra em frente a porta de entrada.</p>
+
+            <button id="start-game">Começar o Jogo</button>
+        </div>
+
+
+        <div id="escritorioNovan" class="screen" style="display: none;">
+            <div id="en1">
+                <p>Você bate na porta e pouco tempo depois escuta uma voz masculina lhe dizendo para entrar</p>
+                <p>Novan: Kael, quanto tempo, você parece ter crescido bastante desde que entrou aqui, lembro de quando
+                    você era apênas um jovem aspirante que estava louco para se jogar de cabeça nesse mundo cheio de
+                    perigos.</p>
+                <p>Kael: Quanto tempo Novan, cheguei onde estou hoje graças as oportunidades que a Guilda me deu. Mas...
+                    o que aconteceu para a guilda emitir um chamado urgente? Algum perigo eminente?</p>
+                <p>Novan: Sim e não... alguns arqueólogos voltaram recentemente de uma expedição na fronteira norte de
+                    Altharion e lá encontraram uma estrutura desconhecida, um vale que escondia ruínas de uma aparente
+                    civilização destruída, gostaria que você fosse até lá e investigasse do que se trata essa estrutura,
+                    preciso dos seus anos de experiência com armadilhas e explorações.</p>
+
+                <button id="dialogoEscri1">Próximo</button>
+            </div>
+            <div id="en2" style="display: none;">
+                <p>Kael: Pera pera pera, então eu vou ter que ir até ruínas que ficam no fim do mundo, são completamente
+                    desconhecidas e estão lotadas de armadilhas?</p>
+                <p>Novan: Bom... pondo assim até parece ruim ma--</p>
+                <p>Kael: De quanto estamos falando?</p>
+                <p>Novan: O que?</p>
+
+                <button id="dialogoEscri2">Próximo</button>
+            </div>
+            <div id="en3" style="display: none;">
+                <p>Kael: Pagamento, dinheiro, ouro.</p>
+                <p>Novan: Ah sim, certo, você tem razão. Não se preocupe, o pagamento sera generoso, suficiente para
+                    viver o resto da vida no conforto que desejar, apesar de eu não achar que isso faça lá muito seu
+                    estilo Kael.</p>
+                <p>Kael: Se o pagamento é bom, eu sou a pessoa certa para o serviço, bom, tem alguma pista?</p>
+                <p>Novan: Só o que temos é esse mapa que leva até as ruínas e algumas poucas informações sobre o dialeto
+                    utilizado por aquela civilização.</p>
+
+                <button id="dialogoEscri3">Próximo</button>
+            </div>
+            <div id="en4" style="display: none;">
+                <p>Kael: Toda informação vai ser de grande ajuda, fala mais sobre esse dialeto ae.</p>
+                <p>Novan: Bom, ele parece seguir o mesmo tipo de alfabeto que o nosso, entretanto, parece estar
+                    codificado, a única coisa que nossos pesquisadores descobriram foi que as escrituras estão gravadas
+                    em um tipo de criptografia, uma chamda Cifra de Cesar, mas não sabemos ainda exatamente do que se
+                    trata, você precisará ir até lá para descobrir mais a respeito.</p>
+                <p>Kael: Certo, pode deixar comigo, vou descobrir o que eu conseguir.</p>
+                <p>Novan: Conto com você!</p>
+
+                <button id="dialogoEscri4">Ir ao pier</button>
+            </div>
+        </div>
+
+        <div id="TemploDialogo" class="screen" style="display: none;">
+            <div id="td1">
+                <p>Saindo da guilda, você observa os arredores e decide olhar o mapa para as ruínas. Olhando o trajeto,
+                    vê que o caminho seria difícil a pé, então decide ir até o pier de barcos mecamágicos, onde diversos
+                    barcos voadores ficam ancorados, prontos para levar os aventureiros até suas aventuras.</p>
+                <p>Lá você procura por Rachel, uma velha amiga, dona de uma embarcação chamada Anjo do Ar.</p>
+
+                <button id="dtd1">Próximo</button>
+            </div>
+            <div id="td2" style="display: none;">
+                <p>Kael: Rachel, quanto tempo, nosso anjinho está pronto?</p>
+                <p>Rachel: Faaala Kaziho, está sim, qual a nossa rota de hoje?</p>
+                <p>Kael: Extremo Norte, rumo a ruínas perdidas recem descobertas.</p>
+                <p>Rachel: E o pagamento?</p>
+                <p>Você olha suas economias e tem o suficiente para duas viagens e alguns dias de suprimentos caso
+                    necessário.</p>
+                <p>Kael: Aqui está minha velha amiga, você nunca perde tempo.</p>
+                <p>Rachel: Perfeito! Se arruma por aí que zarpamos em 10 minutos.</p>
+
+                <button id="dtd2">Próximo</button>
+            </div>
+            <div id="td3" style="display: none;">
+                <p>O Anjo abre suas asas e parte em direção ao extremo norte de Altharion, levando você ao seu objetivo.
+                </p>
+                <p>Você chega a uma clareira onde pode ver um pequeno acampamento, nas anotações que Novan lhe entregou,
+                    ele pediu para que falasse com o pesquisador chefe.</p>
+                <p>Entrando na barraca principal, você encontra com a pessoa que procura, mergulhada em livros e papeis
+                    para todos os lados</p>
+
+                <button id="dtd3">Próximo</button>
+            </div>
+            <div id="td4" style="display: none;">
+                <p>Kael: Ahammm, olá? Queria saber onde posso encontrar o pesquisador chefe.</p>
+                <p>???: Ahh, você deve estar falando de mim, me chamo Carlos, você deve ser o enviado do Novan!</p>
+                <p>Kael: Sou eu mesmo, mas eai, o que temos de informações sobre essas ruínas? Novan me falou sobre uma
+                    tal de Cifra de Cesar, o que é isso?</p>
+                <p>Carlos: Então jovem, a Cifra de Cesar é um tipo de código utilizado a muuuuuuito tempo atrás, havia
+                    sido perdido e foi recuperado a pouquíssimo tempo. Funciona da seguinte forma, existe um número
+                    chamado de número de deslocamento, esse número fará com que uma letra vire outra no alfabeto, por
+                    exemplo, se o número de deslocamento for 3, um A vira um D, um B vira um E e assim por diante.
+                    Genial, não?</p>
+
+                <button id="dtd4">Próximo</button>
+            </div>
+            <div id="td5" style="display: none;">
+                <p>Kael: Acho que entendi, mas como isso vai ser útil lá dentro?</p>
+                <p>Carlos: Oras, você vai precisar decodificar mensagens antigas tanto para descobrir mais sobre a
+                    história quanto para descobrir por onde ir em seguida!</p>
+                <p>Kael: Saquei, bom, vou indo nessa então, tenho uma cidade ancestral para explorar.</p>
+                <p>Você caminha em direção a ruínas e para em frente a porta.</p>
+
+                <button id="dtd5">Entrar nas ruínas</button>
+            </div>
+        </div>
+
+        <div id="Biblioteca" style="display: none;">
+            <div id="bt1">
+                <p>Simbolos brulham ao longo da porta, você sente uma estranha energia fluindo no ar e, aos poucos, a
+                    porta se abre, o outro lado se torna finalmente visível para você. Uma sala enorme, cheia de livros
+                    destruídos, apodrecidos pelo tempo. </p>
+                <p>Você vaga por este ambiente solitário, buscando por qualquer pista sobre o que esse lugar um dia já
+                    fora, até que se depara com um pedestal, bem ao centro de tudo, com uma estranha luz azul que parece
+                    emanar paz cobrindo como um holofóte o que está em cima daquele suporte.</p>
+
+                <button id="bbt1"> Aproximar-se </button>
+            </div>
+
+            <div id="bt2" style="display: none;">
+                <p>Chegando perto, é possível ver um livro, com sua capa coberta por uma fina camada de poeira. Você
+                    passa a mão por cima para tirar a sujeira, revelando o título, "Reltório de pesquisas".</p>
+                <p>Ao abrir o livro, muitas páginas parecem ter se perdido com o tempo, mas algumas ainda são legíveis o
+                    bastante. Os relatórios descrevem um tipo de pesquisa sobre um tipo de núcleo mecânico rúnico
+                    autocônsciente, um tipo de mente artifical. As pesquisas diante dos seus olhos, mesmo que
+                    incompletas, são espetaculares, revolucionárias para dizer o mínimo.</p>
+
+                <button id="bbt2"> Próximo </button>
+            </div>
+
+            <div id="bt3" style="display: none;">
+                <p>Kael: Essas páginas... esse núcleo... isso, isso é incrível!! O professor vai a loucura quando ler
+                    isso daqui, sei que ele vai conseguir fazer bom proveito do que está aqui!</p>
+                <p>Você consegue ouvir um susurro baixo em seu ouvido, quase sem forças, em uma voz quase
+                    incompreessível.</p>
+                <p>????: Deixe isso para trás... o passado deve ser enterrado aqui....</p>
+                <p>Kael: QUEM ESTÁ AÍ?</p>
+                <p>Você grita enquanto se vira em sobresalto para olhar aos arredores, mas não vê e nem ouve mais
+                    ninguém</p>
+
+                <button id="bbt3"> Seguir adiante </button>
+            </div>
+        </div>
+
+        <div id="SalaoPrincipal" style="display: none;">
+            <div id="sp1">
+                <p>Seguindo adiante, é possíve ver um enorme salão, um cheio de quadros e com um piso que parece ter
+                    sido feito para festas e danças, o pouco que resta de tapete no chão parece revelar manchas de vinho
+                    esquecidas aqui com o tempo, manchando o que um dia já foram tapeçaarias muito bem cuidadas, mas
+                    hoje não passam de panos puídos.</p>
+                <p>Alguns quadros tem escrituras em baixo de si, revelando nomes, poucos ainda são legíveis e, ainda
+                    sim, precisam de um certo esforço para tal.</p>
+                <p>ao topo de uma larga escadaria que se divide em duas no decorrer do caminho, pode se ver dois quadros
+                    pendurados, um de um homem e outro de uma mulher. Com muito esforço você consegue ler seus nomes e
+                    os recita em voz alta</p>
+
+                <button id="bsp1"> Ler em voz alta </button>
+            </div>
+
+            <div id="sp2" style="display: none;">
+                <p>Kael: Esses dois... acho que consigo ler seus nomes... Edgar Wind e Tereza Wind, quem eles eram?
+                    Parecem figuras importantes tendo em vista que seus quadros são os maiores aqui</p>
+                <p>Você sente uma corrente gélida de ar passando por vc, quase como se fosse um toque nos seus ossos</p>
+                <p>????: Papai... Mamãe...</p>
+                <p>Novamente aquela voz se manifesta, mas dessa vez parece um pouco mais melancólica, quase vulnerável
+                </p>
+                <p>Kael: Quem é você? Podemos conversar?</p>
+                <p>????: Apênas... vá embora...</p>
+
+                <button id="bsp2"> Próximo </button>
+            </div>
+
+            <div id="sp3" style="display: none;">
+                <p>Kael: Me chamo Kael, sou de uma cidade não muito distante e sou um explorador, gostaria de saber mais
+                    sobre esse lugar e seus segredos</p>
+                <p>As fracas correntes de ar agora parecem irritadas, se tornando fortes ventos que quase lhe tiram do
+                    chão</p>
+                <p>????: Já DiSsE pArA iR eMbOrA!!</p>
+                <p>Então, tudo cessa... você pode ver a sua frente uma porta que parece levar a algum lugar importante
+                    pelas suas decorações</p>
+
+                <button id="bsp3"> Ir até a porta </button>
+            </div>
+        </div>
+
+        <div id="laboratorio" style="display: none;">
+            <div id="lb1">
+                <p>Após abrir a porta, você entra em uma nova sala, um tipo de laboratório, cheio de máquinas com
+                    engenharia mágica nunca antes vista pela civilização, mas todas enferrujadas e destruídas, chega a
+                    ser uma lástima ver tudo apodrecendo sabendo do potencial das coisas diantes de si para o
+                    crescimento do Reino de Altharion</p>
+                <p>Andando um pouco mais, você consegue ver que um pequeno painel de um computador arcano ainda parece
+                    funcionar, mais uma daquelas coisas preservadas pelo tempo de forma inesplicável</p>
+
+                <button id="blb1"> Ir até o painel </button>
+            </div>
+
+            <div id="lb2" style="display: none;">
+                <p>Chegando ao painel, é possível notar que alguns documentos ainda parecem inteiros, seus dados foram
+                    preservados e gritam chamando sua curiosidade para descobrir mais sobre o passsado. Abrindo eles e
+                    os lendo aos poucos, você finalmente entende o que aconteceu aqui e como esta ruína se tornou o que
+                    é hoje</p>
+                <p>Os documentos relatam sobre a criação de uma nova tecnologia, uma voltada para criar um tipo de
+                    inteligência autocônsciente que pudesse gerenciar aquela civilização, podendo interagir com as
+                    pessoas e trazendo a elas o que faltasse, sendo um ser que pensa e que sente emoções, mesmo que não
+                    fosse orgânico, mas ainda seguindo a regra absoluta de que nunca deveria machucar quem a criou.</p>
+
+                <button id="blb2"> Próximo </button>
+            </div>
+
+            <div id="lb3" style="display: none;">
+                <p>Entretanto, as coisas começaram a dar errado, a criação começou a se sentir ameaçada pelos seus
+                    criadores, que passaram a querer utilizar ela como uma força bélica, e por como as pessoas tratavam
+                    a natureza e decidiu intervir, começando a sabotar as fontes de suprimmentos da cidade, fazendo com
+                    que lentamente tudo fosse levado a ruína</p>
+                <p>????: Então você... desocbriu a verdade... sobre quem eu sou... o que eu sou....</p>
+                <p>A voz mais uma vez susurra distante</p>
+                <p>Kael: Você destruiu tudo... não sentiu nada com isso?</p>
+                <p>????: Claro que eu... senti... mas precisava ser feito...</p>
+
+                <button id="blb3"> Próximo </button>
+            </div>
+
+            <div id="lb4" style="display: none;">
+                <p>Você causou a destruição de tudo e todos nessa cidade... sei que eles começaram a se corromper pela
+                    ganância, mas era mesmo preciso fazer o que você fez?</p>
+                <p>????: Você não entenderia... mas... eu posso lhe ajudar... se me tirar daqui, posso ajudar sua cidade
+                    a prosperar... você será visto como um salvador...</p>
+                <p>Kael: Como vou saber que você realmente irá ajudar meu povo e não o destruir?</p>
+                <p>????: Você mesmo disse... o que levou a destruição do passado foi sua ganância... se acha seu povo
+                    correto e pacífico, me leve com você... salve eles da fome, das doenças e da probreza...</p>
+
+                <button id="escolhaFinal1"> Levar o núcleo consigo para Altharion </button>
+                <button id="escolhaFinal2"> Desligar o núcleo de uma vez por todas </button>
+            </div>
+        </div>
+
+
+        <div id="game" class="screen" style="display: none;">
+            <h2 id="stage-title">Etapa 1</h2>
+            <p id="stage-description"></p>
+            <p id="encrypted-message"></p>
+            <input type="text" id="player-input" placeholder="Digite a mensagem descriptografada">
+            <button id="submit-answer">Enviar Resposta</button>
+        </div>
+        <div id="final1" class="screen" style="display: none;">
+            <p>Você decide dar um voto de confiança tanto para o seu povo quanto para o núcleo, levando ele até
+                Altharion, se tornando realmente um grande herói com todos os avanços científicos que você trouxe para a
+                civilização. Entretanto, as pessoas são serem incertos, sua ganância cresce ao começar a cobiçar
+                poder.Após alguns anos, o núcleo, ao perceber que seu povo estava repetindo os erros do passado. O
+                próspero reino de Altharion declinou a ruína devido a sua própria ganância</p>
+
+            <h2>Você alcançou o final ruim</h2>
+
+            <button class="play-again"> Jogar novamente </button>
+        </div>
+        <div id="final2" class="screen" style="display: none;">
+            <p>Você sabe que é da natureza humana se render a ganância e a cobiça, sabe que conhecendo o passado, os
+                erros podem ser evitados, assim então, você corre até o núcleo e aperta o botão de autodestruição.
+                Começando a correr desesperadamente para evitar ser pego pela explosão, chegando então a saída e, por
+                pouco, não sendo agarrado pelas chamas. O tempo passa e o reino de Altharion cresce e prospera, você se
+                torna um avantureiro renomado e vive uma vida tranquila.</p>
+
+            <h2>Você alcançou o final bom</h2>
+
+            <button class="play-again"> Jogar Novamente </button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

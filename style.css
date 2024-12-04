@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(ruins-art-09.jpg) center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff; 
+
+}
+
+#game-container {
+    background: rgba(0, 0, 0, 0.8); 
+    border: 3px solid #6b4423;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+    color: #e2e2e2;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+    margin-top: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #ca9c05;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+p {
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    color: #E8D5B7; 
+    margin-bottom: 10px;
+}
+
+
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+button {
+    background: linear-gradient(to bottom, #8c8427, #696401);
+    color: #fff;
+    border: 2px solid #5e5a1b;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Cinzel', serif;
+    cursor: pointer;
+    border-radius: 10px;
+    text-shadow: 1px 1px 3px #000;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    box-shadow: 0 0 6px 3px rgba(255, 255, 255, 0.719);
+}
+
+
+#encrypted-message {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #ffcc00;
+    margin: 20px 0;
+    text-shadow: 1px 1px 5px #000;
+    font-size: 20px;
+}
+
+
+
+.screen {
+    display: none;
+}
+
+#intro {
+    display: block;
+}
